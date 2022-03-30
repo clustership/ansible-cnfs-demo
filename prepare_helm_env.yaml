@@ -15,4 +15,4 @@
 
   - name: Debug output
     debug:
-      msg: "Hello {{ namespace }}""
+      msg: "Hello {{ namespace }}"
