@@ -7,7 +7,7 @@
   tasks:
   - name: Create helm directory
     file:
-      path: "/tmp/helm"
+      path: "/tmp/helm/{{ cluster_name }}"
       state: directory
       mode: 0755
     tags:
@@ -15,4 +15,4 @@
 
   - name: Debug output
     debug:
-      msg: "Hello"
+      msg: "Hello {{ namespace }}""
